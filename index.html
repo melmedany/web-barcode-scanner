@@ -1,0 +1,37 @@
+<html>
+	<head>        
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" media="screen" rel="stylesheet" type="text/css">
+        <link href="asset/lib/toolkit/css/toolkit.min.css" rel="stylesheet">
+        <link href="asset/css/ui.min.css" rel="stylesheet">
+        <link href="asset/css/style.min.css" rel="stylesheet">
+		<title>Scan Me</title>
+	</head>
+	<body>
+		<div class="test-demo">
+			<h1 class="test-header">Scan Me</h1>
+	    	<div class="test-body">
+	    		<div class="input-group large">
+					<input type="text" id="code-scaned" autofocus class="input" placeholder="Barcode"> 
+				</div>
+				<button id="scan-barcode" class="button large pill is-info">Scan</button>
+				<button id="stop-barcode" class="button large pill is-error" style="display: none;">Stop</button>
+			</div>
+			<br />
+			<br />
+			<div class="form-actions">
+				<button class="button large pill is-info" type="submit">Submit</button>
+            </div>
+		</div>
+
+
+		<div id="barcode" />
+
+		<script type="text/javascript" src="asset/js/jquery.min.js"></script>
+        <script type="text/javascript" src="asset/lib/toolkit/js/toolkit.min.js"></script>
+		<script type="text/javascript" src="asset/lib/quagga/quagga.min.js"></script>
+		<script type="text/javascript" src="asset/js/app.min.js"></script>
+	</body>
+</html>
