@@ -18,20 +18,26 @@
 				</div>
 				<button id="scan-barcode" class="button large pill is-info">Scan</button>
 				<button id="stop-barcode" class="button large pill is-error" style="display: none;">Stop</button>
-			</div>
-			<br />
-			<br />
-			<div class="form-actions">
-				<button class="button large pill is-info" type="submit">Submit</button>
-            </div>
+
+
+	            <a id="barcodeModal" href="#barcode-modal" class="js-modal"></a>
+			</div>			
 		</div>
-
-
-		<div id="barcode" />
-
-		<script type="text/javascript" src="asset/js/jquery.min.js"></script>
-        <script type="text/javascript" src="asset/lib/toolkit/js/toolkit.min.js"></script>
-		<script type="text/javascript" src="asset/lib/quagga/quagga.min.js"></script>
-		<script type="text/javascript" src="asset/js/app.min.js"></script>
 	</body>
+
+	<div id="barcode-modal" class="hidden">    
+		<div class="modal-head">
+	        <h4>Scan Barcode</h4>
+	    </div>
+		<div class="modal-body">
+		</div>
+		<div class="modal-foot">
+        	<button type="button" class="button" data-modal-close>Close</button>
+    	</div>
+	</div>
+
+	<script type="text/javascript" src="asset/js/jquery.min.js"></script>
+    <script type="text/javascript" src="asset/lib/toolkit/js/toolkit.min.js"></script>
+	<script type="text/javascript" src="asset/lib/quagga/quagga.min.js"></script>
+	<script type="text/javascript" src="asset/js/app.min.js"></script>
 </html>
