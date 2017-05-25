@@ -66,7 +66,7 @@ a {
 
 .test-header {
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 10rem;
   text-align: center;
   color: #344a5f; }
 
@@ -186,14 +186,27 @@ textarea {
   height: 400px; }
 
 @media only screen and (min-width: 641px) {
+	.test-header {
+	font-size: 5rem; }
   .concept-1 section {
     height: 500px; } }
 
 @media only screen and (max-width: 640px) {
+	.test-header {
+	font-size: 5rem; }
   .concept-1 .region {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; } }
+            flex-direction: column; } 
+	.span-10 {
+		width: 84%;
+	}
+	#interactive.viewport {
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+}
 
 [class*="icon-16"] {
   background: url("../img/icons-16@2x.png") no-repeat;
@@ -318,3 +331,37 @@ html[dir="rtl"] #stalker-targets {
   right: auto;
   left: 2rem;
   text-align: left; }
+  
+.input-checkbox.large, .input-radio.large, .input-static.large, .input.large, .large .input, .large .input-checkbox, .large .input-radio, .large .input-static {
+	font-size: 2em;
+	padding: 1rem;
+	width: 100%;
+}
+
+.button.large, .large .button {
+	font-size: 2em;
+	padding: 1rem;
+	width: 100%;
+}
+
+.animation {
+	-webkit-transition: all 0.2s; /* Safari */
+    transition: all 0.2s;
+}
+
+* {
+    box-sizing: border-box
+} 
+#interactive.viewport {
+    position: relative;
+}
+
+#interactive.viewport > canvas, #interactive.viewport > video {
+    max-width: 100%;
+    width: 100%;
+}
+canvas.drawing, canvas.drawingBuffer {
+    position: absolute;
+    left: 0;
+    top: 0;
+}

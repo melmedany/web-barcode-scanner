@@ -5,3 +5,4 @@ This demonstration using HTML, Javascript and [TiTon](http://titon.io/en/toolkit
 # How to Use?
 -	Just Download and Run.
 -	If any issue happens involving `getUserMedia()`, try using `https` connection.
+-	Not working on iOS or Mac.
